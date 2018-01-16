@@ -1,0 +1,172 @@
+/**** HTML Tag Styles ****/
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font-size: 16px;
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+a {
+  text-decoration: none; }
+
+p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0; }
+
+footer {
+  height: 80px; }
+
+/**** Global ****/
+.wrapper {
+  min-height: 100vh;
+  background: black;
+  background: linear-gradient(to bottom right, black, grey); }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0px 20px; }
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%; }
+
+.align-center {
+  align-items: center; }
+
+.justify-center {
+  justify-content: center; }
+
+.justify-between {
+  justify-content: space-between; }
+
+.column-fill {
+  flex-basis: 100%; }
+
+/**** Main Heading ****/
+#header {
+  color: white;
+  font-family: "Bungee", sans-serif;
+  font-size: 9vw;
+  letter-spacing: 2px;
+  text-align: center;
+  line-height: 100%;
+  padding: 20px;
+  border-bottom: 1px solid white;
+  margin-bottom: 10px; }
+
+/**** Fact Display ****/
+#facts {
+  width: 100%;
+  border: 2px dashed white;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 10px;
+  font-family: sans-serif;
+  text-align: center;
+  color: white; }
+
+/**** Category Selection ****/
+#categories {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 20px 0px 20px 0px; }
+  #categories h2 {
+    color: white; }
+
+#chuck-fact {
+  padding: 15px;
+  margin-top: 10px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none; }
+
+#show-fact {
+  padding: 10px;
+  margin: 20px 0px;
+  font-family: sans-serif;
+  color: white;
+  border: 2px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 500ms; }
+
+#show-fact:hover {
+  background: white;
+  color: black; }
+
+/**** Chuck Norris Image ****/
+#chuck-box {
+  width: 100%; }
+
+#chuck {
+  width: 100%;
+  border: 4px double white;
+  border-radius: 50%;
+  margin: 0 auto; }
+
+#chuck:hover {
+  animation: pissed-off 0.5s;
+  animation-iteration-count: infinite;
+  border: 4px double red;
+  border-radius: 50%; }
+
+/**** Footer ****/
+#footer-text {
+  padding-top: 30px;
+  color: white;
+  font-size: .95em;
+  text-align: center; }
+  #footer-text a {
+    color: #4785bf;
+    color: orange; }
+  #footer-text a:hover {
+    color: #235480; }
+
+/**** Media Query for Desktop Size ****/
+@media screen and (min-width: 800px) {
+  .column-fill {
+    flex: 1; }
+  #header {
+    font-size: 2.5rem; }
+  #chuck-box {
+    padding: 20px; }
+  #facts {
+    padding: 30px;
+    font-size: 1.25em; }
+  #categories {
+    margin-top: 80px; } }
+
+/**** Shake animation ****/
+@keyframes pissed-off {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg); }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg); }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg); }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg); }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg); }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg); }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg); }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg); }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg); }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg); }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg); } }

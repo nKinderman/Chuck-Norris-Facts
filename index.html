@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <title>Chuck Norris Facts</title>
+    <!--
+    This site is a Chuck Norris fact generator utilizing the Chuck Norris facts provided by the
+    chucknorris.io API. https://api.chucknorris.io
+
+    Built by: Nick Kinderman
+    Date: 1/2018
+    -->
+</head>
+  <body>
+    <div class="wrapper">
+      <!-- Header -->
+      <h1 id="header">Chuck Norris Facts</h1>
+      <!-- Main Body -->
+      <section class="container column-fill">
+        <!-- Fact Display -->
+        <div class="row align-center">
+          <p id="facts"></p>
+        </div>
+        <!-- Category Selection -->
+        <div class="row justify-between ">
+          <div class="column-fill">
+            <div id="categories">
+              <div>
+                <h2>Select a Fact Category</h2>
+                  <select name="facts" id="chuck-fact">
+                    <option value="dev">Dev</option>
+                    <option value="movie">Movie</option>
+                    <option value="food">Food</option>
+                    <option value="celebrity">Celebrity</option>
+                    <option value="science">Science</option>
+                    <option value="sport">Sport</option>
+                    <option value="political">Politcal</option>
+                    <option value="religion">Religion</option>
+                    <option value="animal">Animal</option>
+                    <option value="history">History</option>
+                    <option value="music">Music</option>
+                    <option value="travel">Travel</option>
+                    <option value="career">Career</option>
+                    <option value="money">Money</option>
+                    <option value="fashion">Fashion</option>
+                  </select>
+                  <a type="button" id="show-fact" value="Fact Type">Submit</a>
+              </div>
+            </div>
+          </div>
+          <!-- Chuck Norris Image -->
+          <div class="column-fill">
+            <div id="chuck-box">
+              <img id="chuck" src="images/chuck.png" alt="">
+            </div>
+          </div>
+      </div>
+    </section>
+    <!-- End Main Section -->
+
+    <!-- Begin Footer  -->
+    <footer >
+      <div >
+        <div id="footer-text">
+        <p>Chuck Norris facts provided by the <a href="https://api.chucknorris.io/" target="external">
+          chucknorris.io</a> API.
+        </p>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
